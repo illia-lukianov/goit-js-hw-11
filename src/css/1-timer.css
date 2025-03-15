@@ -1,0 +1,128 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.link {
+    display: flex;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    width: 160px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(78, 117, 255);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.content {
+   margin-top: 20vh; 
+}
+
+.interface {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+input {
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 4px;
+    width: 240px;
+    height: 24px;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+input:hover {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+input:active {
+    border: 1px solid rgb(78, 117, 255);
+}
+
+input:disabled {
+    color: rgb(128, 128, 128);
+    border: 1px solid rgb(128, 128, 128);
+}
+
+button {
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    width: 75px;
+    height: 40px;
+    border: none;
+    background: rgb(78, 117, 255);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+button:disabled {
+    color: rgb(152, 152, 152);
+    background: rgb(207, 207, 207);
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(108, 140, 255);
+}
+
+.timer {
+    display: flex;
+    gap: 24px;
+    width: 346px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.value {
+    color: rgb(46, 47, 66);
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    color: rgb(46, 47, 66);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    width: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.flatpickr-day.selected {
+    background: rgb(78, 117, 255) !important;
+}
+.flatpickr-day:hover {
+    background: rgb(193, 193, 193) !important;
+}
+
+.flatpickr-day.today {
+    border-color: rgb(78, 117, 255) !important;
+}
