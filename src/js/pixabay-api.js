@@ -8,7 +8,7 @@ const searchParams = {
 }
 
 export default function queryToPixabayApi(searchData) {
-  return axios.get('https://pixabay.com/api', {
+  return axios.get("https://pixabay.com/api", {
     params: {
       q: searchData,
       ...searchParams
