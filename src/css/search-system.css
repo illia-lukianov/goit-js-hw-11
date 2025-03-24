@@ -51,6 +51,9 @@ button:hover {
 .gallery-item {
     display: flex;
     flex-direction: column;
+    width: 360px;
+    border: 1px solid rgb(128, 128, 128);
+    background: url(ux-indonesia-qC2n6RQU4Vw-unsplash);
 }
 
 .item-image {
@@ -90,43 +93,23 @@ button:hover {
 
 /* #region Loader */
 .loader {
-    position: relative;
-    width: 64px;
-    height: 64px;
-    background-color: rgba(0, 0, 0, 0.5);
-    transform: rotate(45deg);
-    overflow: hidden;
-    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    border: 5px solid;
+    border-color: #FF3D00 transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
 }
 
-.loader:after {
-    content: '';
-    position: absolute;
-    inset: 8px;
-    margin: auto;
-    background: #222b32;
-}
-
-.loader:before {
-    content: '';
-    position: absolute;
-    inset: -15px;
-    margin: auto;
-    background: #de3500;
-    animation: diamondLoader 2s linear infinite;
-}
-
-@keyframes diamondLoader {
-
-    0%,
-    10% {
-        transform: translate(-64px, -64px) rotate(-45deg)
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
     }
 
-    90%,
     100% {
-        transform: translate(0px, 0px) rotate(-45deg)
+        transform: rotate(360deg);
     }
 }
-
 /* #endregion */
